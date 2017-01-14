@@ -486,7 +486,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-
+  
 // A4988 / TMC2100  Stepper Motor Driver (16 step)
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.6,81.6,1600,145 }
 
