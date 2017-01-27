@@ -18,6 +18,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+ * CL-260
  */
 
 /**
@@ -253,7 +254,7 @@
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
-#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 60
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE 25
@@ -491,8 +492,7 @@
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.6,81.6,1600,145 }
 
 // DRV8825 Stepper Motor Driver (32 step)
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 163.2,163.2,3200,290 }
-
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 163.2,163.2,3200,175 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -693,14 +693,14 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR true
+#define INVERT_X_DIR false
 #define INVERT_Y_DIR false
-#define INVERT_Z_DIR true
+#define INVERT_Z_DIR false
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR true
 #define INVERT_E2_DIR true
 #define INVERT_E3_DIR true
