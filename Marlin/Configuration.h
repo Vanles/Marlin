@@ -488,11 +488,11 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
   
-// A4988 / TMC2100  Stepper Motor Driver (16 step)
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.6,81.6,1600,145 }
+// A4988 / TMC2100  Stepper Motor Driver (16 step), TR8*8
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.6,81.6,400,878.3 }
 
 // DRV8825 Stepper Motor Driver (32 step)
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 163.2,163.2,3200,175 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 163.2,163.2,3200,175 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -726,9 +726,9 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 220
-#define Y_MAX_POS 220
-#define Z_MAX_POS 260
+#define X_MAX_POS 205
+#define Y_MAX_POS 200
+#define Z_MAX_POS 280
 
 //===========================================================================
 //========================= Filament Runout Sensor ==========================
