@@ -489,7 +489,7 @@
  */
   
 // A4988 / TMC2100  Stepper Motor Driver (16 step), TR8*8
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.6,81.6,400,878.3 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 160 }
 
 // DRV8825 Stepper Motor Driver (32 step)
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 163.2,163.2,3200,175 }
@@ -499,7 +499,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 80 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 300 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -507,7 +507,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 9000, 9000, 100, 10000 }
+#define DEFAULT_MAX_ACCELERATION      { 9000, 9000, 100, 12000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -700,7 +700,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR true
 #define INVERT_E2_DIR true
 #define INVERT_E3_DIR true
