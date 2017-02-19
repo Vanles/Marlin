@@ -507,7 +507,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 9000, 9000, 100, 12000 }
+#define DEFAULT_MAX_ACCELERATION      { 9000, 9000, 100, 9000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -693,14 +693,14 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR false
-#define INVERT_Z_DIR false
+#define INVERT_X_DIR true // for tmc2100
+#define INVERT_Y_DIR true // for tmc2100
+#define INVERT_Z_DIR true // for tmc2100
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true // for tmc2100
 #define INVERT_E1_DIR true
 #define INVERT_E2_DIR true
 #define INVERT_E3_DIR true
@@ -1008,7 +1008,7 @@
 // Attention: This is an EXPERIMENTAL feature, in the future the G-code arguments
 // may change to add new functionality like different wipe patterns.
 //
-//#define NOZZLE_CLEAN_FEATURE
+#define NOZZLE_CLEAN_FEATURE
 
 #if ENABLED(NOZZLE_CLEAN_FEATURE)
   // Number of pattern repetitions
