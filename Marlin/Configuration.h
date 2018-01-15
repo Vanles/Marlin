@@ -433,10 +433,10 @@
 // Almost all printers will be using one per axis. Probes will use one or more of the
 // extra connectors. Leave undefined any used for non-endstop and non-probe purposes.
 #define USE_XMIN_PLUG
-//#define USE_YMIN_PLUG
+#define USE_YMIN_PLUG
 #define USE_ZMIN_PLUG
 //#define USE_XMAX_PLUG
-#define USE_YMAX_PLUG
+//#define USE_YMAX_PLUG
 //#define USE_ZMAX_PLUG
 
 // coarse Endstop Settings
@@ -492,7 +492,7 @@
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.6,81.6,1600,145 }
 
 // DRV8825 Stepper Motor Driver (32 step)
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 163.2,163.2,3200,175 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 163.2,163.2,3200,175 }
 
 /**
  * Default Max Feed Rate (mm/s)

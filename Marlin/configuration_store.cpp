@@ -569,7 +569,8 @@ void Config_Postprocess() {
  * M502 - Reset Configuration
  */
 void Config_ResetDefault() {
-  const float tmp1[] = DEFAULT_AXIS_STEPS_PER_UNIT, tmp2[] = DEFAULT_MAX_FEEDRATE;
+  const float tmp1[] = DEFAULT_AXIS_STEPS_PER_UNIT;
+  const float tmp2[] = DEFAULT_MAX_FEEDRATE;
   const long tmp3[] = DEFAULT_MAX_ACCELERATION;
   LOOP_XYZE_N(i) {
     planner.axis_steps_per_mm[i]          = tmp1[i < COUNT(tmp1) ? i : COUNT(tmp1) - 1];
