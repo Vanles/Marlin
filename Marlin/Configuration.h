@@ -136,7 +136,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "UM DIY [Hendrik]"
+#define CUSTOM_MACHINE_NAME "UM DIY [Denis]"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -278,11 +278,11 @@
 // The minimal temperature defines the temperature below which the heater will not be enabled It is used
 // to check that the wiring to the thermistor is not broken.
 // Otherwise this would lead to the heater being powered on all the time.
-#define HEATER_0_MINTEMP 150
+#define HEATER_0_MINTEMP 5
 #define HEATER_1_MINTEMP 5
 #define HEATER_2_MINTEMP 5
 #define HEATER_3_MINTEMP 5
-#define BED_MINTEMP 10
+#define BED_MINTEMP 5
 
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
@@ -492,7 +492,7 @@
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.6,81.6,1600,145 }
 
 // DRV8825 Stepper Motor Driver (32 step)
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 163.2,163.2,3200,175 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 163.2,163.2,3200,864 }
 
 /**
  * Default Max Feed Rate (mm/s)
